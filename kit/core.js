@@ -8,10 +8,10 @@ export const ChorumeKit = () => ({
 
         ChorumeKit().app = ChorumeKit().getElement('app');
     },
-    getElement: id => {
-        return document.getElementById(id);
+    getElement: targetId => {
+        return document.getElementById(targetId);
     },
-    putElement: (tagName, styles = {}, targetId = 'chorume-app',) => {
+    putElement: (tagName, elementId, styles = {}, targetId = 'chorume-app',) => {
         if (!tagName || !targetId) {
             throw new Error("É necessário especificar o 'tagName' e o 'targetId'.");
         }
@@ -22,6 +22,7 @@ export const ChorumeKit = () => ({
         }
 
         const element = document.createElement(tagName);
+        element.id = elementId;
 
         for (let property in styles) {
             const cssProperty = property.replace(/([A-Z])/g, "-$1").toLowerCase();
