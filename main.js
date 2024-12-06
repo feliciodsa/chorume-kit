@@ -14,6 +14,6 @@ chorumeKit.putElement('div', {
     gap: '20px'
 }).id = 'welcome'
 
-chorumeKit.putElement('h1', hStyle, 'welcome').innerText = 'Chorume Kit'
-chorumeKit.putElement('h3', hStyle, 'welcome').innerText = 'Small and Pratice Lib'
-chorumeKit.putElement('button', {}, 'welcome').innerText = 'This is a button'
+chorumeKit.putElement('h1', 'h-1', hStyle, 'welcome').innerText = 'Chorume Kit'
+chorumeKit.putElement('h3', 'h-2', hStyle, 'welcome').innerText = 'Small and Pratice Lib'
+chorumeKit.putElement('button', 'button-1', {}, 'welcome').innerText = 'This is a button'
