@@ -18,7 +18,7 @@ export const ChorumeKit = () => ({
 
         const target = document.getElementById(targetId);
         if (!target) {
-            throw new Error(`O alvo com ID "${targetId}" não foi encontrado.`);
+            throw new Error(`O elemento com ID "${targetId}" não foi encontrado.`);
         }
 
         const element = document.createElement(tagName);
